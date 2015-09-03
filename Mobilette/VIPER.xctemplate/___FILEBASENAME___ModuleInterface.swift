@@ -6,7 +6,7 @@
 //___COPYRIGHT___
 //
 
-protocol ___FILEBASENAMEASIDENTIFIER___ModuleInterface
+protocol ___FILEBASENAMEASIDENTIFIER___ModuleInterface: class
 {
 	func viewDidLoad()
 }

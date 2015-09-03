@@ -6,7 +6,7 @@
 //___COPYRIGHT___
 //
 
-protocol ___FILEBASENAMEASIDENTIFIER___ViewInterface
+protocol ___FILEBASENAMEASIDENTIFIER___ViewInterface: class
 {
 
 }
