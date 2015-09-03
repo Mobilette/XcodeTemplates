@@ -42,10 +42,12 @@ enum ___FILEBASENAMEASIDENTIFIER___Router:
     
     var method: Alamofire.Method {
         switch self {
-        case .Index, .Read:
+        case .Index:
             return .GET
         case .Create:
             return .POST
+        case .Read:
+            return .GET
         case .Update:
             return .PUT
         case .Destroy:
