@@ -15,8 +15,8 @@ class ___FILEBASENAMEASIDENTIFIER___Wireframe//: StoryboardSegueDelegate
 {
 	// MARK: - Property
 
-    var presenter: ___FILEBASENAMEASIDENTIFIER___Presenter? = nil
-    private var viewController: ___FILEBASENAMEASIDENTIFIER___ViewController? = nil
+    weak var presenter: ___FILEBASENAMEASIDENTIFIER___Presenter? = nil
+    private weak var viewController: ___FILEBASENAMEASIDENTIFIER___ViewController? = nil
 
     // MARK: - Storyboard segue
 

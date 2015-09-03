@@ -14,7 +14,7 @@ class ___FILEBASENAMEASIDENTIFIER___Presenter:
 {
 	// MARK: - Property
     
-    var view: ___FILEBASENAMEASIDENTIFIER___ViewInterface? = nil
+    weak var view: ___FILEBASENAMEASIDENTIFIER___ViewInterface? = nil
     var interactor: ___FILEBASENAMEASIDENTIFIER___InteractorInput? = nil
     var wireframe: ___FILEBASENAMEASIDENTIFIER___Wireframe? = nil
 
