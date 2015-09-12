@@ -22,7 +22,7 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController:
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        self.presenter?.viewDidLoad()
+        self.presenter?.updateView()
     }
 
     override func didReceiveMemoryWarning()

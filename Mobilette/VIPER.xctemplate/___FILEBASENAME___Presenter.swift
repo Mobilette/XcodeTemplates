@@ -20,7 +20,7 @@ class ___FILEBASENAMEASIDENTIFIER___Presenter:
 
     // MARK: - ___FILEBASENAMEASIDENTIFIER___ module interface
 
-    func viewDidLoad()
+    func updateView()
     {
     	<# ... #>
     }

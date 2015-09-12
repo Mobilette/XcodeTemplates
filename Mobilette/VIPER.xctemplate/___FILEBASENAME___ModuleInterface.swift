@@ -8,5 +8,5 @@
 
 protocol ___FILEBASENAMEASIDENTIFIER___ModuleInterface: class
 {
-	func viewDidLoad()
+	func updateView()
 }
