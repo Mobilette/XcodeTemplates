@@ -10,17 +10,17 @@ import Foundation
 import PromiseKit
 import ObjectMapper
 
-class ___FILEBASENAMEASIDENTIFIER___DataManager
+class ___FILEBASENAMEASIDENTIFIER___NetworkController
 {
     // MARK: - Property
     
     // MARK: - Life cycle
 
-    // MARK: - Data management
+    // MARK: - Network
     
     // MARK: - Error
     
-    enum ___FILEBASENAMEASIDENTIFIER___DataManagerError
+    enum ___FILEBASENAMEASIDENTIFIER___NetworkControllerError
     {
         case Mapping(String)
         
@@ -32,7 +32,7 @@ class ___FILEBASENAMEASIDENTIFIER___DataManager
         }
         
         var domain: String {
-            return "DataManagerDomain"
+            return "NetworkControllerDomain"
         }
         
         var description: String {

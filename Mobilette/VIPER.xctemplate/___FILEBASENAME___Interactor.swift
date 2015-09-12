@@ -14,7 +14,7 @@ class ___FILEBASENAMEASIDENTIFIER___Interactor:
 	// MARK: - Property
     
     weak var output: ___FILEBASENAMEASIDENTIFIER___InteractorOutput? = nil
-    lazy private var dataManager: ___FILEBASENAMEASIDENTIFIER___DataManager = ___FILEBASENAMEASIDENTIFIER___DataManager()
+    // var networkController: ___FILEBASENAMEASIDENTIFIER___NetworkController? = nil
 
     // MARK: - ___FILEBASENAMEASIDENTIFIER___ interactor input interface
 
