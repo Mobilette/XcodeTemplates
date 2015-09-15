@@ -10,7 +10,7 @@ import Foundation
 import PromiseKit
 import ObjectMapper
 
-class ___FILEBASENAMEASIDENTIFIER___NetworkController
+class ___FILEBASENAMEASIDENTIFIER___NetworkController: ___FILEBASENAMEASIDENTIFIER___NetworkProtocol
 {
     // MARK: - Property
     
