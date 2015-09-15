@@ -24,7 +24,7 @@ class ___FILEBASENAMEASIDENTIFIER___Presenter:
 
     func updateView()
     {
-    	<# ... #>
+    	
     }
     
     // MARK: - ___FILEBASENAMEASIDENTIFIER___ interactor output interface

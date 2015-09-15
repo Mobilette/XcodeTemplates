@@ -65,6 +65,7 @@ class ___FILEBASENAMEASIDENTIFIER___Wireframe//: StoryboardSegueDelegate
         */
 
         viewController.presenter = self.presenter
+        self.viewController = viewController
         self.presenter?.view = viewController
     }
     */
