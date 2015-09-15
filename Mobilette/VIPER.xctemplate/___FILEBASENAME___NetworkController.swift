@@ -9,8 +9,8 @@
 //
 
 import Foundation
-import PromiseKit
-import ObjectMapper
+// import PromiseKit
+// import ObjectMapper
 
 class ___FILEBASENAMEASIDENTIFIER___NetworkController: ___FILEBASENAMEASIDENTIFIER___NetworkProtocol
 {
