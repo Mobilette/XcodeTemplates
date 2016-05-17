@@ -9,7 +9,7 @@
 	<key>DefaultCompletionName</key>
 	<string>File</string>
 	<key>Description</key>
-	<string>Create API Service class.</string>
+	<string>Create repository class.</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>Platforms</key>
@@ -17,6 +17,6 @@
 		<string>com.apple.platform.iphoneos</string>
 	</array>
 	<key>Summary</key>
-	<string>Create API Service class.</string>
+	<string>Create repository class.</string>
 </dict>
 </plist>

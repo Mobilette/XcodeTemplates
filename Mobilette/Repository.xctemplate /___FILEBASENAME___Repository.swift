@@ -31,7 +31,7 @@ class ___FILEBASENAMEASIDENTIFIER___Repository:
     func update___FILEBASENAMEASIDENTIFIER___(<# property name #>: ___FILEBASENAMEASIDENTIFIER___)
     {
         if let index = self.<# property name #>s.indexOf({ $0.identifier == <# property name #>.identifier }) {
-            self.<# property name #>s[index] = card
+            self.<# property name #>s[index] = <# property name #>
         }
     }
     
@@ -51,7 +51,7 @@ class ___FILEBASENAMEASIDENTIFIER___Repository:
     
     var description: String {
         return "{ ___FILEBASENAMEASIDENTIFIER___Repository" + "\n"
-            + "<# property name #>: \(self.<# property name #>)" + "\n"
+            + "<# property name #>s: \(self.<# property name #>s)" + "\n"
             + "}" + "\n"
     }
 }
@@ -59,5 +59,5 @@ class ___FILEBASENAMEASIDENTIFIER___Repository:
 // MARK: - Equatable protocol
 
 func ==(lhs: ___FILEBASENAMEASIDENTIFIER___Repository, rhs: ___FILEBASENAMEASIDENTIFIER___Repository) -> Bool {
-    return lhs.cards == rhs.cards
+    return lhs.<# property name #>s == rhs.<# property name #>s
 }
