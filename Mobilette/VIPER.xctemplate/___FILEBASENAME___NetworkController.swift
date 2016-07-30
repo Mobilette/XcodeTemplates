@@ -9,6 +9,7 @@
 //
 
 import Foundation
+import MobiletteFoundation
 // import PromiseKit
 // import ObjectMapper
 
@@ -22,7 +23,7 @@ class ___FILEBASENAMEASIDENTIFIER___NetworkController: ___FILEBASENAMEASIDENTIFI
     
     // MARK: - Error
     
-    enum ___FILEBASENAMEASIDENTIFIER___NetworkControllerError
+    enum Error: MBError
     {
         case Mapping(String)
         
@@ -34,7 +35,7 @@ class ___FILEBASENAMEASIDENTIFIER___NetworkController: ___FILEBASENAMEASIDENTIFI
         }
         
         var domain: String {
-            return "NetworkControllerDomain"
+            return "___FILEBASENAMEASIDENTIFIER___NetworkControllerDomain"
         }
         
         var description: String {
@@ -49,14 +50,6 @@ class ___FILEBASENAMEASIDENTIFIER___NetworkController: ___FILEBASENAMEASIDENTIFI
             case .Mapping(let JSONString):
                 return "Response string can not be mapped to the object.\nString: \(JSONString)."
             }
-        }
-        
-        var error: NSError {
-            let userInfo = [
-                NSLocalizedDescriptionKey: self.description,
-                NSLocalizedFailureReasonErrorKey: self.reason
-            ]
-            return NSError(domain: self.domain, code: self.code, userInfo: userInfo)
         }
     }
 }

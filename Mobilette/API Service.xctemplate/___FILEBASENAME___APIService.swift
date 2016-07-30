@@ -9,6 +9,7 @@
 import Foundation
 import Alamofire
 import PromiseKit
+import MobiletteFoundation
 
 class ___FILEBASENAMEASIDENTIFIER___APIService
 {
@@ -18,11 +19,11 @@ class ___FILEBASENAMEASIDENTIFIER___APIService
 
     // MARK: - Type
     
-    enum ___FILEBASENAMEASIDENTIFIER___APIError
+    enum Error: MBError
     {
-        case Unknown(RouterProtocol)
-        case Unauthorized(RouterProtocol)
-        case MissingData(RouterProtocol)
+        case Unknown
+        case Unauthorized
+        case MissingData
         case Serialization(AnyObject)
         
         var code: Int {
@@ -39,16 +40,7 @@ class ___FILEBASENAMEASIDENTIFIER___APIService
         }
         
         var domain: String {
-            switch self {
-            case .Unknown:
-                return "NetworkDomain"
-            case .Unauthorized:
-                return "UserUnauthorizedDomain"
-            case .MissingData:
-                return "DataManagementDomain"
-            case .Serialization:
-                return "DataManagementDomain"
-            }
+            return "___FILEBASENAMEASIDENTIFIER___APIService"
         }
         
         var description: String {
@@ -66,23 +58,15 @@ class ___FILEBASENAMEASIDENTIFIER___APIService
         
         var reason: String {
             switch self {
-            case .Unknown(let router):
-                return "Unknown error at \(router.path)\nRequest server: \(router.path) with \(router.method.rawValue) method."
-            case .Unauthorized(let router):
-                return "Need to be logged before performing \(router.path)\nRequest server: \(router.path) with \(router.method.rawValue) method."
-            case .MissingData(let router):
+            case .Unknown:
+                return ""
+            case .Unauthorized:
+                return "Need to be logged before performing request."
+            case .MissingData:
                 return "Response string doesn't contain any known datas.\nRequest server: \(router.path) with \(router.method.rawValue) method."
             case .Serialization(let object):
                 return "Can not serialize this object: \(object)."
             }
-        }
-        
-        var error: NSError {
-            let userInfo = [
-                NSLocalizedDescriptionKey: self.description,
-                NSLocalizedFailureReasonErrorKey: self.reason
-            ]
-            return NSError(domain: self.domain, code: self.code, userInfo: userInfo)
         }
     }
 }

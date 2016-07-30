@@ -12,28 +12,8 @@ import ObjectMapper
 
 enum ___FILEBASENAMEASIDENTIFIER___Router:
     RouterProtocol,
-    URLRequestConvertible,
-    Printable
+    URLRequestConvertible
 {
-    var baseURLString: String {
-        let version = <# Default version #>
-        if let baseURLString = ConfigurationHelper.configuration("WEB_SERVICE_BASE_URL", key: "API_URL") {
-            return "\(baseURLString)api/\(version)"
-        }
-        else {
-            let baseURLString = <# Base URL string by default #>
-            return "\(baseURLString)api/\(version)"
-        }
-    }
-    var OAuthToken: String? {
-        if let credentials = LinkydogOAuthCredential.retreiveCredential().0 {
-            if let accessToken = credentials.token {
-                return accessToken
-            }
-        }
-        return nil
-    }
-    
     case Index()
     case Create(___FILEBASENAMEASIDENTIFIER___CreationJSONItem)
     case Read(String)
@@ -55,35 +35,29 @@ enum ___FILEBASENAMEASIDENTIFIER___Router:
         }
     }
 
-    var model: String {
+    var resource: String {
         return <# Model name #>
     }
     
     var path: String {
         switch self {
         case .Index:
-            return "/\(model)/"
+            return "/\(resource)/"
         case .Create:
-            return "/\(model)/"
+            return "/\(resource)/"
         case .Read(let id):
-            return "/\(model)/\(id)/"
+            return "/\(resource)/\(id)/"
         case .Update(let id, _):
-            return "/\(model)/\(id)"
+            return "/\(resource)/\(id)"
         case .Destroy(let id):
-            return "/\(model)/\(id)"
+            return "/\(resource)/\(id)"
         }
     }
     
     // MARK: URLRequestConvertible
     
     var URLRequest: NSURLRequest {
-        let URL = NSURL(string: self.baseURLString)!
-        let mutableURLRequest = NSMutableURLRequest(URL: URL.URLByAppendingPathComponent(path))
-        mutableURLRequest.HTTPMethod = method.rawValue
-        
-        if let token = OAuthToken {
-            mutableURLRequest.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
-        }
+        let mutableURLRequest: NSMutableURLRequest = self.baseURLRequest
         
         switch self {
         case .Create(let JSONItem):
@@ -95,16 +69,5 @@ enum ___FILEBASENAMEASIDENTIFIER___Router:
         default:
             return mutableURLRequest
         }
-    }
-
-    // MARK: - Printable protocol
-    
-    var description: String {
-        return "{ ___FILEBASENAMEASIDENTIFIER___Router" + "\n"
-            + "baseURLString: \(self.baseURLString)" + "\n"
-            + "OAuthToken: \(self.OAuthToken)" + "\n"
-            + "method: \(self.method.rawValue)" + "\n"
-            + "path: \(self.path)" + "\n"
-            + "}" + "\n"
     }
 }

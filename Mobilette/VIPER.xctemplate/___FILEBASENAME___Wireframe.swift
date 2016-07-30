@@ -15,7 +15,7 @@ let ___FILEBASENAMEASIDENTIFIER___ViewControllerIdentifier: String = "___FILEBAS
 
 class ___FILEBASENAMEASIDENTIFIER___Wireframe//: StoryboardSegueDelegate
 {
-	// MARK: - Property
+    // MARK: - Property
 
     weak var presenter: ___FILEBASENAMEASIDENTIFIER___Presenter? = nil
     private weak var viewController: ___FILEBASENAMEASIDENTIFIER___ViewController? = nil
@@ -105,18 +105,18 @@ class ___FILEBASENAMEASIDENTIFIER___Wireframe//: StoryboardSegueDelegate
     /*
     private func viewControllerFromStoryboard() -> ___FILEBASENAMEASIDENTIFIER___ViewController
     {
-    let storyboard = self.mainStoryboard()
-    let viewController = storyboard.instantiateViewControllerWithIdentifier(___FILEBASENAMEASIDENTIFIER___ViewControllerIdentifier) as! ___FILEBASENAMEASIDENTIFIER___ViewController
-    return viewController
+        let storyboard = self.mainStoryboard()
+        let viewController = storyboard.instantiateViewControllerWithIdentifier(___FILEBASENAMEASIDENTIFIER___ViewControllerIdentifier) as! ___FILEBASENAMEASIDENTIFIER___ViewController
+        return viewController
     }
     */
     
     /*
     private func navigationControllerFromStoryboard() -> UINavigationController
     {
-    let storyboard = self.mainStoryboard()
-    let navigationController = storyboard.instantiateViewControllerWithIdentifier(___FILEBASENAMEASIDENTIFIER___ViewControllerIdentifier) as! UINavigationController
-    return navigationController
+        let storyboard = self.mainStoryboard()
+        let navigationController = storyboard.instantiateViewControllerWithIdentifier(___FILEBASENAMEASIDENTIFIER___ViewControllerIdentifier) as! UINavigationController
+        return navigationController
     }
     */
 }
