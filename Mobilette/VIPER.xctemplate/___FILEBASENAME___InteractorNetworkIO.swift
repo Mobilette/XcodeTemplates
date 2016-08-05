@@ -8,7 +8,12 @@
 //___COPYRIGHT___
 //
 
-protocol ___FILEBASENAMEASIDENTIFIER___ViewInterface: class
+protocol ___FILEBASENAMEASIDENTIFIER___InteractorNetworkInput: class
 {
+    
+}
 
+protocol ___FILEBASENAMEASIDENTIFIER___InteractorNetworkOutput: class
+{
+    
 }

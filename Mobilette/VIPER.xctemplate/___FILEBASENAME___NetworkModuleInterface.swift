@@ -8,7 +8,6 @@
 //___COPYRIGHT___
 //
 
-protocol ___FILEBASENAMEASIDENTIFIER___ViewInterface: class
+protocol ___FILEBASENAMEASIDENTIFIER___NetworkModuleInterface: class
 {
-
 }
