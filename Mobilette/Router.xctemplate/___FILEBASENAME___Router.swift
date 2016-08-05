@@ -9,6 +9,7 @@
 import Foundation
 import Alamofire
 import ObjectMapper
+import MobiletteFoundation
 
 enum ___FILEBASENAMEASIDENTIFIER___Router:
     RouterProtocol,
@@ -36,7 +37,7 @@ enum ___FILEBASENAMEASIDENTIFIER___Router:
     }
 
     var resource: String {
-        return <# Model name #>
+        return "<# Model name #>"
     }
     
     var path: String {

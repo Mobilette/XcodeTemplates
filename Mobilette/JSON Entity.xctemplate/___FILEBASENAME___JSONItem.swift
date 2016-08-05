@@ -11,7 +11,7 @@ import ObjectMapper
 
 class ___FILEBASENAMEASIDENTIFIER___JSONItem:
     Equatable,
-    Printable,
+    CustomStringConvertible,
     Mappable
 {
     // MARK: - Property

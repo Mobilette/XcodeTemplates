@@ -10,7 +10,7 @@ import Foundation
 
 class ___FILEBASENAMEASIDENTIFIER___:
     Equatable,
-    Printable
+    CustomStringConvertible
 {
     // MARK: - Property
 
