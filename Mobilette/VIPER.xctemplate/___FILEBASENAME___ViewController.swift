@@ -17,7 +17,7 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController:
 {
 	// MARK: - Property
 
-    var presenter: ___FILEBASENAMEASIDENTIFIER___ModuleInterface? = nil
+    var presenter: ___FILEBASENAMEASIDENTIFIER___ViewModuleInterface? = nil
 
 	// MARK: - Life cycle
 
