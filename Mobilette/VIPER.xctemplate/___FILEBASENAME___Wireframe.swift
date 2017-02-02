@@ -34,7 +34,7 @@ class ___FILEBASENAMEASIDENTIFIER___Wireframe//: StoryboardSegueDelegate
 
     func prepareInterface(fromSegue segue: UIStoryboardSegue)
     {
-        let viewController = segue.destinationViewController as! ___FILEBASENAMEASIDENTIFIER___ViewController
+        let viewController = segue.destination as! ___FILEBASENAMEASIDENTIFIER___ViewController
         viewController.presenter = self.presenter
         self.viewController = viewController
         self.presenter?.view = viewController
@@ -75,19 +75,28 @@ class ___FILEBASENAMEASIDENTIFIER___Wireframe//: StoryboardSegueDelegate
     /*
     func prepare<# Interface name #>Interface()
     {
-        var presenter = <# Interface name #>Presenter()
-        var interactor = <# Interface name #>Interactor()
-        var wireframe = <# Interface name #>Wireframe()
-        interactor.output = presenter
-        presenter.interactor = interactor
-        presenter.wireframe = wireframe
+//        let networkPresenter = <# Interface name #>NetworkPresenter()
+//        let networkController = <# Interface name #>NetworkController()
+//        networkPresenter.networkController = networkController
+//        networkController.presenter = networkPresenter
+     
+        let viewPresenter = <# Interface name #>ViewPresenter()
+     
+        let interactor = <# Interface name #>Interactor()
+        interactor.view = viewPresenter
+        viewPresenter.interactor = interactor
+//        interactor.network = networkPresenter
+//        networkPresenter.interactor = interactor
+     
+        let wireframe = <# Interface name #>Wireframe()
         wireframe.presenter = presenter
+        viewPresenter.wireframe = wireframe
+
         if let segue = self.preparedSegue {
-            MBLog.view(MBLog.Level.High, object: "Did prepare <# Interface name #> interface.")
             wireframe.prepareInterface(fromSegue: segue)
         }
         else {
-            MBLog.error(MBLog.Level.High, object: "Did fail to prepare <# Interface name #> interface.")
+            // Log error
         }
     }
     */
@@ -97,7 +106,7 @@ class ___FILEBASENAMEASIDENTIFIER___Wireframe//: StoryboardSegueDelegate
     /*
     private func mainStoryboard() -> UIStoryboard
     {
-        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle:NSBundle.mainBundle())
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         return storyboard
     }
     */
@@ -106,7 +115,7 @@ class ___FILEBASENAMEASIDENTIFIER___Wireframe//: StoryboardSegueDelegate
     private func viewControllerFromStoryboard() -> ___FILEBASENAMEASIDENTIFIER___ViewController
     {
         let storyboard = self.mainStoryboard()
-        let viewController = storyboard.instantiateViewControllerWithIdentifier(___FILEBASENAMEASIDENTIFIER___ViewControllerIdentifier) as! ___FILEBASENAMEASIDENTIFIER___ViewController
+        let viewController = storyboard.storyboard.instantiateViewController(withIdentifier: ___FILEBASENAMEASIDENTIFIER___ViewControllerIdentifier) as! ___FILEBASENAMEASIDENTIFIER___ViewController
         return viewController
     }
     */
@@ -115,7 +124,7 @@ class ___FILEBASENAMEASIDENTIFIER___Wireframe//: StoryboardSegueDelegate
     private func navigationControllerFromStoryboard() -> UINavigationController
     {
         let storyboard = self.mainStoryboard()
-        let navigationController = storyboard.instantiateViewControllerWithIdentifier(___FILEBASENAMEASIDENTIFIER___ViewControllerIdentifier) as! UINavigationController
+        let navigationController = storyboard.instantiateViewController(withIdentifier: ___FILEBASENAMEASIDENTIFIER___ViewControllerIdentifier) as! UINavigationController
         return navigationController
     }
     */

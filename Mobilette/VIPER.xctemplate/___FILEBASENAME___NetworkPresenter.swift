@@ -25,33 +25,8 @@ class ___FILEBASENAMEASIDENTIFIER___NetworkPresenter:
     
     // MARK: - Error
     
-    enum Error: MBError
+    enum ___FILEBASENAMEASIDENTIFIER___NetworkPresenter: Error
     {
-        case Mapping(String)
-        
-        var code: Int {
-            switch self {
-            case .Mapping:
-                return 500
-            }
-        }
-        
-        var domain: String {
-            return "___FILEBASENAMEASIDENTIFIER___NetworkControllerDomain"
-        }
-        
-        var description: String {
-            switch self {
-            case .Mapping:
-                return "Mapping Error."
-            }
-        }
-        
-        var reason: String {
-            switch self {
-            case .Mapping(let JSONString):
-                return "Response string can not be mapped to the object.\nString: \(JSONString)."
-            }
-        }
+        case Mapping
     }
 }
