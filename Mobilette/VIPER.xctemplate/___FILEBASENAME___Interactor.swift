@@ -17,7 +17,7 @@ class ___FILEBASENAMEASIDENTIFIER___Interactor:
 	// MARK: - Property
     
     weak var view: ___FILEBASENAMEASIDENTIFIER___InteractorViewOutput? = nil
-    // var network: ___FILEBASENAMEASIDENTIFIER___InteractorNetworkOutput? = nil
+    var network: ___FILEBASENAMEASIDENTIFIER___InteractorNetworkOutput? = nil
 
     // MARK: - ___FILEBASENAMEASIDENTIFIER___ interactor view input interface
     

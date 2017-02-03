@@ -2,7 +2,7 @@
 //  ___FILENAME___
 //  ___PROJECTNAME___
 //
-//  Mobilette template version 2.0
+//  Mobilette template version 3.0
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
 //___COPYRIGHT___
@@ -13,7 +13,9 @@ import UIKit
 
 let ___FILEBASENAMEASIDENTIFIER___ViewControllerIdentifier: String = "___FILEBASENAMEASIDENTIFIER___ViewController"
 
-class ___FILEBASENAMEASIDENTIFIER___Wireframe//: StoryboardSegueDelegate
+class ___FILEBASENAMEASIDENTIFIER___Wireframe:
+    ModuleWireframeInterface,
+    StoryboardSegueDelegate
 {
     // MARK: - Property
 
@@ -22,110 +24,36 @@ class ___FILEBASENAMEASIDENTIFIER___Wireframe//: StoryboardSegueDelegate
 
     // MARK: - Storyboard segue
 
-    /*    
-    enum SegueIdentifier: String {
-        case PushTo<# Next interface name #> = "push___FILEBASENAMEASIDENTIFIER___To<# Next interface name #>"
-    }
-    */
-
     private var preparedSegue: UIStoryboardSegue? = nil
-
-    // MARK: - Presentation
-
-    func prepareInterface(fromSegue segue: UIStoryboardSegue)
+    
+    func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
-        let viewController = segue.destination as! ___FILEBASENAMEASIDENTIFIER___ViewController
+        self.preparedSegue = segue
+    }
+
+    // MARK: - Prepare Interface
+    
+    func prepareInterface(fromViewController viewController: UIViewController)
+    {
+        guard let viewController = viewController as? ___FILEBASENAMEASIDENTIFIER___ViewController else {
+            abort()
+        }
         viewController.presenter = self.presenter
+        viewController.storyboardSegueDelegate = self
         self.viewController = viewController
         self.presenter?.view = viewController
     }
 
+    // MARK: - Present External Interface
+
     /*
-    func prepareInterface(fromSegue segue: UIStoryboardSegue)
+    func present<# Interface name #>Interface()
     {
-        let navigationViewController = segue.destinationViewController as! UINavigationController
-        if let viewController = navigationViewController.viewControllers.first as? ___FILEBASENAMEASIDENTIFIER___ViewController {
-            viewController.presenter = self.presenter
-            self.viewController = viewController
-            self.presenter?.view = viewController
+        guard let segue = self.preparedSegue else {
+            abort()
         }
-    }
-    */
-
-    /*
-    func presentInterface(fromWindow window: UIWindow)
-    {
-    	/*
-        let viewController = self.viewControllerFromStoryboard()
-        */
-
-    	/*
-        let navigationViewController = self.navigationControllerFromStoryboard()
-        if let viewController = navigationViewController.viewControllers.first as? ___FILEBASENAMEASIDENTIFIER___ViewController
-        */
-
-        viewController.presenter = self.presenter
-        self.viewController = viewController
-        self.presenter?.view = viewController
-    }
-    */
-
-    // MARK: - Prepare interface
-
-    /*
-    func prepare<# Interface name #>Interface()
-    {
-//        let networkPresenter = <# Interface name #>NetworkPresenter()
-//        let networkController = <# Interface name #>NetworkController()
-//        networkPresenter.networkController = networkController
-//        networkController.presenter = networkPresenter
-     
-        let viewPresenter = <# Interface name #>ViewPresenter()
-     
-        let interactor = <# Interface name #>Interactor()
-        interactor.view = viewPresenter
-        viewPresenter.interactor = interactor
-//        interactor.network = networkPresenter
-//        networkPresenter.interactor = interactor
-     
-        let wireframe = <# Interface name #>Wireframe()
-        wireframe.presenter = presenter
-        viewPresenter.wireframe = wireframe
-
-        if let segue = self.preparedSegue {
-            wireframe.prepareInterface(fromSegue: segue)
-        }
-        else {
-            // Log error
-        }
-    }
-    */
-    
-    // MARK: - Storyboard
-    
-    /*
-    private func mainStoryboard() -> UIStoryboard
-    {
-        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        return storyboard
-    }
-    */
-    
-    /*
-    private func viewControllerFromStoryboard() -> ___FILEBASENAMEASIDENTIFIER___ViewController
-    {
-        let storyboard = self.mainStoryboard()
-        let viewController = storyboard.storyboard.instantiateViewController(withIdentifier: ___FILEBASENAMEASIDENTIFIER___ViewControllerIdentifier) as! ___FILEBASENAMEASIDENTIFIER___ViewController
-        return viewController
-    }
-    */
-    
-    /*
-    private func navigationControllerFromStoryboard() -> UINavigationController
-    {
-        let storyboard = self.mainStoryboard()
-        let navigationController = storyboard.instantiateViewController(withIdentifier: ___FILEBASENAMEASIDENTIFIER___ViewControllerIdentifier) as! UINavigationController
-        return navigationController
+        let presenter = ModuleFactory.<# Interface name #>Module()
+        presenter.wireframe?.presentInterface(fromSegue: segue)
     }
     */
 }

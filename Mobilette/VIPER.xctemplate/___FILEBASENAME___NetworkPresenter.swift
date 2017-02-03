@@ -2,7 +2,7 @@
 //  ___FILENAME___
 //  ___PROJECTNAME___
 //
-//  Mobilette template version 2.0
+//  Mobilette template version 3.0
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
 //___COPYRIGHT___
@@ -23,9 +23,11 @@ class ___FILEBASENAMEASIDENTIFIER___NetworkPresenter:
     
     // MARK: - ___FILEBASENAMEASIDENTIFIER___ interactor network output interface
     
+    // MARK: - Convert raw datas
+    
     // MARK: - Error
     
-    enum ___FILEBASENAMEASIDENTIFIER___NetworkPresenter: Error
+    enum ___FILEBASENAMEASIDENTIFIER___NetworkPresenterError: Error
     {
         case Mapping
     }
