@@ -36,7 +36,7 @@ class ___FILEBASENAMEASIDENTIFIER___Wireframe:
     func prepareInterface(fromViewController viewController: UIViewController)
     {
         guard let viewController = viewController as? ___FILEBASENAMEASIDENTIFIER___ViewController else {
-            abort()
+            fatalError("Invalid view controller type.")
         }
         viewController.presenter = self.presenter
         viewController.storyboardSegueDelegate = self
@@ -50,7 +50,7 @@ class ___FILEBASENAMEASIDENTIFIER___Wireframe:
     func present<# Interface name #>Interface()
     {
         guard let segue = self.preparedSegue else {
-            abort()
+            fatalError("Segue is not set.")
         }
         let presenter = ModuleFactory.<# Interface name #>Module()
         presenter.wireframe?.presentInterface(fromSegue: segue)
