@@ -11,8 +11,6 @@
 import Foundation
 import UIKit
 
-let ___FILEBASENAMEASIDENTIFIER___ViewControllerIdentifier: String = "___FILEBASENAMEASIDENTIFIER___ViewController"
-
 class ___FILEBASENAMEASIDENTIFIER___Wireframe:
     ModuleWireframeInterface,
     StoryboardSegueDelegate
@@ -26,12 +24,14 @@ class ___FILEBASENAMEASIDENTIFIER___Wireframe:
 
     private var preparedSegue: UIStoryboardSegue? = nil
     
-    func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         self.preparedSegue = segue
     }
 
-    // MARK: - Prepare Interface
+    // MARK: - Module Wireframe Interface
+    
+    var interfaceIdentifier: String = "___FILEBASENAMEASIDENTIFIER___ViewController"
     
     func prepareInterface(fromViewController viewController: UIViewController)
     {

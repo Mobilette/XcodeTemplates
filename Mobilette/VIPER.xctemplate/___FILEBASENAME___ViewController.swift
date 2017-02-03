@@ -27,6 +27,7 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController:
 	// MARK: - Property
 
     var presenter: ___FILEBASENAMEASIDENTIFIER___ViewModuleInterface? = nil
+    var storyboardSegueDelegate: StoryboardSegueDelegate? = nil
 
 	// MARK: - Life cycle
 
@@ -44,9 +45,10 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController:
     
     // MARK: - Navigation delegate
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        switch segueIdentifierForSegue(segue) {
+        self.storyboardSegueDelegate?.prepare(for: segue, sender: sender)
+        switch segueIdentifier(for: segue) {
         case .presentInterface1:
             print("presentInterface1")
         case .presentInterface2:
