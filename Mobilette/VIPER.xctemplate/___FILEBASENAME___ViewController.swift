@@ -2,7 +2,7 @@
 //  ___FILENAME___
 //  ___PROJECTNAME___
 //
-//  Mobilette template version 3.0
+//  Mobilette template version 3.1
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
 //___COPYRIGHT___
@@ -13,6 +13,7 @@ import UIKit
 
 class ___FILEBASENAMEASIDENTIFIER___ViewController:
     UIViewController,
+    Presentable,
     SegueHandlerType,
     ___FILEBASENAMEASIDENTIFIER___ViewInterface
 {
@@ -27,7 +28,7 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController:
 	// MARK: - Property
 
     var presenter: ___FILEBASENAMEASIDENTIFIER___ViewModuleInterface? = nil
-    var storyboardSegueDelegate: StoryboardSegueDelegate? = nil
+    weak var storyboardSegueDelegate: StoryboardSegueDelegate? = nil
 
 	// MARK: - Life cycle
 
