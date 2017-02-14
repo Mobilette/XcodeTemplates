@@ -10,14 +10,14 @@
 
 import Foundation
 
-class ___FILEBASENAMEASIDENTIFIER___NetworkPresenter:
+class ___FILEBASENAMEASIDENTIFIER___Controller:
     ___FILEBASENAMEASIDENTIFIER___NetworkModuleInterface,
     ___FILEBASENAMEASIDENTIFIER___InteractorNetworkOutput
 {
     // MARK: - Property
 
     weak var interactor: ___FILEBASENAMEASIDENTIFIER___InteractorNetworkInput? = nil
-    var networkController: ___FILEBASENAMEASIDENTIFIER___NetworkInterface? = nil
+    var network: ___FILEBASENAMEASIDENTIFIER___NetworkInterface? = nil
     
     // MARK: - ___FILEBASENAMEASIDENTIFIER___ network module interface
     
@@ -25,10 +25,4 @@ class ___FILEBASENAMEASIDENTIFIER___NetworkPresenter:
     
     // MARK: - Convert raw datas
     
-    // MARK: - Error
-    
-    enum ___FILEBASENAMEASIDENTIFIER___NetworkPresenterError: Error
-    {
-        case Mapping
-    }
 }

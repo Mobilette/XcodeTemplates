@@ -12,11 +12,11 @@ import Foundation
 import PromiseKit
 import ObjectMapper
 
-class ___FILEBASENAMEASIDENTIFIER___NetworkController: ___FILEBASENAMEASIDENTIFIER___NetworkInterface
+class ___FILEBASENAMEASIDENTIFIER___Network: ___FILEBASENAMEASIDENTIFIER___NetworkInterface
 {
     // MARK: - Property
     
-    weak var presenter: ___FILEBASENAMEASIDENTIFIER___NetworkModuleInterface? = nil
+    weak var controller: ___FILEBASENAMEASIDENTIFIER___NetworkModuleInterface? = nil
     
     // MARK: - Life cycle
 

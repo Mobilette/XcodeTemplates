@@ -10,7 +10,7 @@
 
 import Foundation
 
-class ___FILEBASENAMEASIDENTIFIER___ViewPresenter:
+class ___FILEBASENAMEASIDENTIFIER___Presenter:
     ___FILEBASENAMEASIDENTIFIER___ViewModuleInterface,
     ___FILEBASENAMEASIDENTIFIER___InteractorViewOutput
 {
