@@ -1,6 +1,17 @@
 # How to get started
 
 - [Download VIPER Xcode template](https://github.com/Mobilette/XcodeTemplates/archive/master.zip)
-- Copy the `Mobilette` folder to `/Applications/Xcode.app/Contents/Developer/Library/Xcode/Templates/File\ Templates/`
-- Start Xcode and create a new file (`File > New > File` or `⌘N`)
-- Choose `Mobilette` and any template you want
+- Clone the repository `git clone https://github.com/Mobilette/XcodeTemplates ~/Library/`
+- Copy the two folders to `~/Library/Developer/Xcode/Templates/`
+
+## Project template
+
+- Start Xcode
+- Create a new project (`File > New > Project` or `⇧⌘N`)
+- Choose a template in `Mobilette` section
+
+## File template
+
+- Start Xcode
+- Create a new file (`File > New > File` or `⌘N`)
+- Choose a template in `Mobilette` section
