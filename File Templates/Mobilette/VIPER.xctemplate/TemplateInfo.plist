@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>Description</key>
+	<string>All necesseray files for VIPER architecture.</string>
+	<key>Summary</key>
+	<string>All necesseray files for VIPER architecture</string>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+	<key>AllowedTypes</key>
+	<array>
+		<string>public.swift-source</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Module name:</string>
+			<key>Description</key>
+			<string>A module defines all necessary files for a view.</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string>UserRegistration</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>UIClass</string>
+			<key>Required</key>
+			<string>YES</string>
+			<key>Name</key>
+			<string>View Controller class:</string>
+			<key>Description</key>
+			<string>A default implemenation of UI classes for VIPER architecture.</string>
+			<key>Type</key>
+			<string>popup</string>
+			<key>Default</key>
+			<string>UIViewController</string>
+			<key>Values</key>
+			<array>
+				<string>UIViewController</string>
+				<string>UITableViewController</string>
+				<string>UICollectionViewController</string>
+			</array>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>hasInOut</string>
+			<key>Required</key>
+			<string>FALSE</string>
+			<key>Name</key>
+			<string>Include in/out protocols</string>
+			<key>Description</key>
+			<string>Adds in/out protocols for classes.</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Default</key>
+			<string>false</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>Description</key>
+	<string>All necesseray files for VIPER services.</string>
+	<key>Summary</key>
+	<string>All necesseray files for VIPER services</string>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+	<key>AllowedTypes</key>
+	<array>
+		<string>public.swift-source</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Use case name:</string>
+			<key>Description</key>
+			<string>Use cases must use -able -ible in their name.</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string>UserRegistrable</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>classType</string>
+			<key>Required</key>
+			<string>YES</string>
+			<key>Name</key>
+			<string>Service type:</string>
+			<key>Description</key>
+			<string>Adds all necessary files for a specific service.</string>
+			<key>Type</key>
+			<string>popup</string>
+			<key>Default</key>
+			<string>Network</string>
+			<key>Values</key>
+			<array>
+				<string>Network</string>
+				<string>Database</string>
+			</array>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>hasInOut</string>
+			<key>Required</key>
+			<string>FALSE</string>
+			<key>Name</key>
+			<string>Include in/out protocols</string>
+			<key>Description</key>
+			<string>Adds in/out protocols for classes.</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Default</key>
+			<string>false</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+	</array>
+</dict>
+</plist>
