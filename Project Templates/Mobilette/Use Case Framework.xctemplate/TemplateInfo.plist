@@ -18,13 +18,6 @@
 	<integer>1</integer>
 	<key>Definitions</key>
 	<dict>
-		<key>Domain</key>
-		<dict>
-			<key>Path</key>
-			<string>Domain</string>
-			<key>TargetIndices</key>
-			<array/>
-		</dict>
 		<key>Domain/Entity.swift</key>
 		<dict>
 			<key>Path</key>
@@ -50,9 +43,7 @@
 		<string>../Cartfile:cart:PromiseKit</string>
 		<string>../Cartfile:cart:Quick</string>
 		<string>../Cartfile:cart:Nimble</string>
-		<string>../bin</string>
 		<string>../bin/setup</string>
-		<string>Domain</string>
 		<string>Domain/Entity.swift</string>
 		<string>Domain/Repository.swift</string>
 	</array>

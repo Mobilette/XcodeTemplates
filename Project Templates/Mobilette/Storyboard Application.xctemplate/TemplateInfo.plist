@@ -16,13 +16,6 @@
 		<string>&lt;key&gt;UIMainStoryboardFile&lt;/key&gt;
 &lt;string&gt;Main&lt;/string&gt;
 </string>
-		<key>Main</key>
-		<dict>
-			<key>Path</key>
-			<string>Main</string>
-			<key>TargetIndices</key>
-			<array/>
-		</dict>
 		<key>Main/Main.storyboard</key>
 		<dict>
 			<key>Group</key>
@@ -35,7 +28,6 @@
 	</dict>
 	<key>Nodes</key>
 	<array>
-		<string>Main</string>
 		<string>Info.plist:UIMainStoryboardFile</string>
 		<string>Main/Main.storyboard</string>
 	</array>

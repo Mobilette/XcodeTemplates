@@ -15,29 +15,11 @@
 	<true/>
 	<key>Description</key>
 	<string>Swift starter project for Use Case framework</string>
-	<key>Definitions</key>
-	<dict>
-		<key>Commons</key>
-		<dict>
-			<key>Path</key>
-			<string>Commons</string>
-			<key>TargetIndices</key>
-			<array/>
-		</dict>
-		<key>Login</key>
-		<dict>
-			<key>Path</key>
-			<string>Login</string>
-			<key>TargetIndices</key>
-			<array/>
-		</dict>
-	</dict>
 	<key>Nodes</key>
 	<array>
 		<string>../___PACKAGENAME___.podspec</string>
 		<string>../Cartfile:cart:PromiseKit</string>
 		<string>../Cartfile:cart:Alamofire</string>
-		<string>../bin</string>
 		<string>../bin/setup</string>
 		<string>Commons/RouterProtocol.swift</string>
 		<string>Commons/Error.swift</string>

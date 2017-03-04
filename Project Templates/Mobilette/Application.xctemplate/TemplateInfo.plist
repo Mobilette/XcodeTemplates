@@ -38,13 +38,6 @@
 			<key>Path</key>
 			<string>ModuleFactory.swift</string>
 		</dict>
-		<key>Commons</key>
-		<dict>
-			<key>Path</key>
-			<string>Commons</string>
-			<key>TargetIndices</key>
-			<array/>
-		</dict>
 		<key>Commons/Modules/Routable.swift</key>
 		<dict>
 			<key>Path</key>
@@ -139,7 +132,6 @@
 		<string>../Podfile:targetTests:Nimble</string>
 		<string>../Podfile:targetTests:Quick</string>
 		<string>ModuleFactory.swift</string>
-		<string>Commons</string>
 		<string>Commons/Modules/Routable.swift</string>
 		<string>Commons/Storyboards/SegueHandlerType.swift</string>
 		<string>Commons/Storyboards/StoryboardSegueDelegate.swift</string>

@@ -83,13 +83,6 @@
 			<key>TargetIndices</key>
 			<array/>
 		</dict>
-		<key>../bin</key>
-		<dict>
-			<key>Path</key>
-			<string>bin</string>
-			<key>TargetIndices</key>
-			<array/>
-		</dict>
 		<key>../bin/setup</key>
 		<dict>
 			<key>Path</key>
