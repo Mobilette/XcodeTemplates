@@ -21,6 +21,13 @@
 			<key>End</key>
 			<string>end</string>
 		</dict>
+		<key>*:targetTests</key>
+		<dict>
+			<key>Beginning</key>
+			<string>target &apos;___PACKAGENAME___Tests&apos; do</string>
+			<key>End</key>
+			<string>end</string>
+		</dict>
 	</dict>
 </dict>
 </plist>

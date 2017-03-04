@@ -12,105 +12,87 @@
 	</array>
 	<key>Definitions</key>
 	<dict>
-		<key>*:source:CocoaPods</key>
-		<string>source &apos;https://github.com/CocoaPods/Specs.git&apos;</string>
-		<key>*:platform</key>
-		<string>platform :ios, &apos;9.0&apos;</string>
-		<key>*:framework</key>
-		<string>use_frameworks!</string>
-		<key>*:target</key>
-		<dict>
-			<key>Beginning</key>
-			<string>target &apos;___PACKAGENAME___&apos; do</string>
-			<key>End</key>
-			<string>end</string>
-		</dict>
-		<key>*:target:Alamofire</key>
-		<string>pod &apos;Alamofire&apos;, &apos;~&gt; 4.0&apos;</string>
-		<key>*:target:ObjectMapper</key>
-		<string>pod &apos;ObjectMapper&apos;</string>
-		<key>Commons/API/Components/DateISO8601Transform.swift</key>
+		<key>*:cart:PromiseKit</key>
+		<string>github &quot;mxcl/PromiseKit&quot;</string>
+		<key>*:cart:Alamofire</key>
+		<string>github &quot;Alamofire/Alamofire&quot;</string>
+		<key>Commons/RouterProtocol.swift</key>
 		<dict>
 			<key>Path</key>
-			<string>API/Components/DateISO8601Transform.swift</string>
+			<string>RouterProtocol.swift</string>
 			<key>Group</key>
 			<array>
 				<string>Commons</string>
-				<string>API</string>
-				<string>Components</string>
 			</array>
 		</dict>
-		<key>Commons/API/RouterProtocol.swift</key>
+		<key>Commons/Error.swift</key>
 		<dict>
 			<key>Path</key>
-			<string>API/RouterProtocol.swift</string>
+			<string>Error.swift</string>
 			<key>Group</key>
 			<array>
 				<string>Commons</string>
-				<string>API</string>
 			</array>
 		</dict>
-		<key>Commons/API/Error.swift</key>
+		<key>___PROJECTNAME___API.swift</key>
 		<dict>
 			<key>Path</key>
-			<string>API/Error.swift</string>
+			<string>___PROJECTNAME___API.swift</string>
+		</dict>
+		<key>Commons/Requestable.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>Requestable.swift</string>
 			<key>Group</key>
 			<array>
 				<string>Commons</string>
-				<string>API</string>
 			</array>
 		</dict>
-		<key>Commons/API/___PROJECTNAME___API.swift</key>
+		<key>Commons/NetworkCancelable.swift</key>
 		<dict>
 			<key>Path</key>
-			<string>API/___PROJECTNAME___API.swift</string>
+			<string>NetworkCancelable.swift</string>
 			<key>Group</key>
 			<array>
 				<string>Commons</string>
-				<string>API</string>
 			</array>
 		</dict>
-		<key>Commons/API/Request.swift</key>
+		<key>Login/LoginRouter.swift</key>
 		<dict>
 			<key>Path</key>
-			<string>API/Request.swift</string>
+			<string>LoginRouter.swift</string>
 			<key>Group</key>
 			<array>
-				<string>Commons</string>
-				<string>API</string>
+				<string>Login</string>
 			</array>
 		</dict>
-		<key>Commons/API/User/UserRouter.swift</key>
+		<key>Login/LoginFeature.swift</key>
 		<dict>
 			<key>Path</key>
-			<string>API/User/UserRouter.swift</string>
+			<string>LoginFeature.swift</string>
 			<key>Group</key>
 			<array>
-				<string>Commons</string>
-				<string>API</string>
-				<string>User</string>
+				<string>Login</string>
 			</array>
 		</dict>
-		<key>Commons/API/User/UserError.swift</key>
+		<key>Login/Authenticable/Authenticable.swift</key>
 		<dict>
 			<key>Path</key>
-			<string>API/User/UserError.swift</string>
+			<string>Authenticable/Authenticable.swift</string>
 			<key>Group</key>
 			<array>
-				<string>Commons</string>
-				<string>API</string>
-				<string>User</string>
+				<string>Login</string>
+				<string>Authenticable</string>
 			</array>
 		</dict>
-		<key>Commons/API/User/UserAuthenticable.swift</key>
+		<key>Login/Authenticable/AuthenticableBoundaries.swift</key>
 		<dict>
 			<key>Path</key>
-			<string>API/User/UserAuthenticable.swift</string>
+			<string>Authenticable/AuthenticableBoundaries.swift</string>
 			<key>Group</key>
 			<array>
-				<string>Commons</string>
-				<string>API</string>
-				<string>User</string>
+				<string>Login</string>
+				<string>Authenticable</string>
 			</array>
 		</dict>
 	</dict>

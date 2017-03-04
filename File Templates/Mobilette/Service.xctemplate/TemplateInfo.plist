@@ -24,13 +24,13 @@
 			<key>Required</key>
 			<true/>
 			<key>Name</key>
-			<string>Use case name:</string>
+			<string>Service name:</string>
 			<key>Description</key>
-			<string>Use cases must use -able -ible in their name.</string>
+			<string>Service name should be the same for all the necessary module files.</string>
 			<key>Type</key>
 			<string>text</string>
 			<key>Default</key>
-			<string>UserRegistrable</string>
+			<string>Authentication</string>
 			<key>NotPersisted</key>
 			<true/>
 		</dict>
@@ -67,7 +67,7 @@
 			<key>Type</key>
 			<string>checkbox</string>
 			<key>Default</key>
-			<string>false</string>
+			<string>true</string>
 			<key>NotPersisted</key>
 			<true/>
 		</dict>

@@ -26,11 +26,11 @@
 			<key>Name</key>
 			<string>Use case name:</string>
 			<key>Description</key>
-			<string>Use cases must use -able -ible in their name.</string>
+			<string>Use case name should be the same for all the necessary module files.</string>
 			<key>Type</key>
 			<string>text</string>
 			<key>Default</key>
-			<string>UserRegistrable</string>
+			<string>Authentication</string>
 			<key>NotPersisted</key>
 			<true/>
 		</dict>
@@ -42,7 +42,7 @@
 			<key>Name</key>
 			<string>Resource class:</string>
 			<key>Description</key>
-			<string>The class name of the resource used as repository.</string>
+			<string>Class name of the resource used as repository.</string>
 			<key>Type</key>
 			<string>text</string>
 			<key>Default</key>
@@ -58,7 +58,7 @@
 			<key>Name</key>
 			<string>Resource variable name:</string>
 			<key>Description</key>
-			<string>The variable name of the resource used as repository.</string>
+			<string>Variable name of the resource used as repository.</string>
 			<key>Type</key>
 			<string>text</string>
 			<key>Default</key>
