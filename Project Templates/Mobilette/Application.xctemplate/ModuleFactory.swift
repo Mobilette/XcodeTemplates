@@ -10,7 +10,7 @@
 
 import Foundation
 
-class ModuleFactory
+final class ModuleFactory
 {
     // Use this template for rootViewController from Window
     /*

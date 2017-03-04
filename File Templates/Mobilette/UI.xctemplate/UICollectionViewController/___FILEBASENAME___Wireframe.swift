@@ -11,7 +11,7 @@
 import Foundation
 import UIKit
 
-class ___FILEBASENAMEASIDENTIFIER___Wireframe:
+final class ___FILEBASENAMEASIDENTIFIER___Wireframe:
     Routable,
     SegueHandlerType
 {

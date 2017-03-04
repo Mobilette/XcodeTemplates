@@ -11,7 +11,7 @@
 import Foundation
 import ObjectMapper
 
-open class DateISO8601Transform: TransformType
+open final class DateISO8601Transform: TransformType
 {
     public typealias Object = Date
     public typealias JSON = String

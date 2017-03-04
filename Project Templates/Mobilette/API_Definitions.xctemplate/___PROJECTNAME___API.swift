@@ -11,7 +11,7 @@
 import Foundation
 import PromiseKit
 
-public class ___PROJECTNAME___API:
+public final class ___PROJECTNAME___API:
     Authenticable
 {
 }
