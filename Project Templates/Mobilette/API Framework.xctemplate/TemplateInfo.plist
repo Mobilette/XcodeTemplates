@@ -17,6 +17,8 @@
 	<string>Swift starter project for Use Case framework</string>
 	<key>Nodes</key>
 	<array>
+		<string>Scripts/increment_build_number.sh</string>
+		<string>Scripts/fixme_warning.sh</string>
 		<string>../___PACKAGENAME___.podspec</string>
 		<string>../Cartfile:cart:PromiseKit</string>
 		<string>../Cartfile:cart:Alamofire</string>

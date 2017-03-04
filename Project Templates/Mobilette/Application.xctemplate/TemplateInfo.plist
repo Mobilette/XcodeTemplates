@@ -140,6 +140,7 @@
 	</dict>
 	<key>Nodes</key>
 	<array>
+		<string>Scripts</string>
 		<string>Scripts/increment_build_number.sh</string>
 		<string>Scripts/fixme_warning.sh</string>
 		<string>../Podfile:source:CocoaPods</string>
