@@ -13,13 +13,22 @@ import PromiseKit
 
 final class ___FILEBASENAMEASIDENTIFIER___Gateway
 {
+    // MARK: - Type
+    
+    typealias RequestType = ___FILEBASENAMEASIDENTIFIER___DatabaseRequest
+    typealias ResponseType = ___FILEBASENAMEASIDENTIFIER___DatabaseResponse
+    
     // MARK: - Property
     
-    var database: ___FILEBASENAMEASIDENTIFIER___DatabaseInterface? = nil
+    var database: ___FILEBASENAMEASIDENTIFIER___DatabaseInterface
     weak var output: ___FILEBASENAMEASIDENTIFIER___GatewayOutput? = nil
     
-    // MARK: - Converting entities
+    // MARK: - Life cycle
     
+    init(database: ___FILEBASENAMEASIDENTIFIER___DatabaseInterface)
+    {
+        self.database = database
+    }
 }
 
 extension ___FILEBASENAMEASIDENTIFIER___Gateway: ___FILEBASENAMEASIDENTIFIER___GatewayInput
